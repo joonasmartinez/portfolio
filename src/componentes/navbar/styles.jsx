@@ -4,14 +4,11 @@ export const Container = styled.nav`
     width: 100%;
     height:auto;
     display:flex;
-    flex-direction:column;
-    row-gap: 50%;
-    /* background-color:blue; */
+    justify-content:space-around;
+    background-color:black;
 `
 
 export const menu = styled.nav`
-
-    /* box-shadow: 10px 10px 10px 5px black; */
     border-radius:15px;
     display:flex;
     justify-content:center;
@@ -19,14 +16,16 @@ export const menu = styled.nav`
 
 `
 export const Smenu = styled.nav`
-    /* background-color:#a705054a; */
-    /* box-shadow: 10px 10px 10px 5px black; */
-    border-radius:15px;
+    min-width:70%;
+    background-color:#ffffff49;
+    box-shadow: 0px 0px 15px 1px black;
+    /* border-radius:15px; */
     display:flex;
-    margin-top:1%;
     justify-content:space-around;
+    column-gap: 51px;
     align-items:center;
     color:white;
+    padding: 1%;
 
 `
 
@@ -41,15 +40,24 @@ export const SubTitle = styled.p`
     border:1px solid white;
     font-family: 'Dosis', sans-serif;
     z-index: 9;
+    /* min-width: 15rem; */
     padding:10px;
     cursor: pointer;
     transition:2s;
     transition-timing-function: ease;
     :hover{
-        transition:0.2s;
-        /* position:absolute; */
-        padding:50px;
+        top: 1150px;
+        transition:0.5s;
+        padding:15px;
         font-size:1.5em;
     }
     /* font-family: 'Montserrat', sans-serif; */
+`
+
+export const Button = styled.button`
+    padding: 1em;
+    color:white;
+    background-color:transparent;
+    border:none;
+    cursor: pointer;
 `
