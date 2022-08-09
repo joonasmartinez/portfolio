@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const Basic = styled.section`
-    width:99vw;
+    width:100%;
     height:100vh;
+    background-color:red;
     /* padding: 0.5%; */
     /* background-image:url('../../../public/imagens/1.png'); */
     display:flex;
-    flex-direction:column;
+    justify-content:center;
+    /* flex-direction:column; */
     align-items:center;
 `

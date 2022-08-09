@@ -4,21 +4,17 @@ import { useState } from "react";
 import * as C from './styles'
 // import Nature from '../../../public/imagens/nature.png'
 
-export const NavBar = ({status, nav})=>{
+export const NavBar = ()=>{
 
     return (
         <C.Container>
 
-                <C.menu>
-                    <C.Titulo>Jonas Martinez - Web Developer</C.Titulo>
-                </C.menu>
-
                 <C.Smenu>
-                    <C.SubTitle href='#home' onClick={()=>{nav[1](true)}}>Home</C.SubTitle>
-                    <C.SubTitle onClick={()=>{nav[0](!status.about), nav[1](false)}}>Sobre mim</C.SubTitle>
-                    <C.SubTitle>Portfolio</C.SubTitle>
+                    <C.SubTitle onClick={()=>window.scrollTo(0, 0)}>Home</C.SubTitle>
+                    <C.SubTitle onClick={()=>window.scrollTo(0, 969)}>Sobre mim</C.SubTitle>
+                    <C.SubTitle onClick={()=>window.scrollTo(0, 969*2)}>Portfolio</C.SubTitle>
                     <C.SubTitle>Descricao</C.SubTitle>
-                    <C.SubTitle>Contato</C.SubTitle>
+                    <C.SubTitle onClick={()=>window.scrollTo(0, 969*3)}>Contato</C.SubTitle>
                 </C.Smenu>
 
                 <C.menu>

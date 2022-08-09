@@ -1,11 +1,31 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import * as C from './styles';
 
 export const About = ()=>{
 
+    const [avatar, setAvatar] = useState('');
+
+    useEffect(()=>{
+        const data = fetch('https://api.github.com/users/joonasmartinez', {method:'GET'}).then(res => res.json()).then(res => setAvatar(res.avatar_url));
+        
+    }, [avatar])
+
     return (
         <C.Basic>
-            <h3>Sobre mim</h3>
+            <C.leftSide>
+                <C.Imagem src={avatar} />
+                <C.Titulo>Jonas Alex Martinez</C.Titulo>
+                <C.desc>Desenvolvedor atualmente focado para Web.<br/>
+                Determinado a conhecer à fundo sobre programação.<br/>
+                Me dedico todo tempo que tenho disponível à aprender!
+                Aprendo colocando a mão na massa.</C.desc>
+                
+            </C.leftSide>
+
+            <C.rightSide>
+
+            </C.rightSide>
         </C.Basic>
     )
 }

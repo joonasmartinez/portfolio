@@ -7,6 +7,7 @@ export const Container = styled.nav`
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
+    position:static;
     /* background-color:black; */
 `
 
@@ -21,7 +22,7 @@ export const Smenu = styled.nav`
     width:70%;
     background-color:transparent;
     /* box-shadow: 0px 0px 15px 1px black; */
-    /* border-radius:15px; */
+    /* border-radius:-10px; */
     border-top: 1px solid #8f8f8f;
     border-bottom: 1px solid #8f8f8f;
     display:flex;
@@ -33,7 +34,7 @@ export const Smenu = styled.nav`
 
 `
 
-export const Titulo = styled.p`
+export const Titulo = styled.h1`
     color:black;
     font-family: 'Dosis', sans-serif;
     font-size:2em;
@@ -50,6 +51,7 @@ export const SubTitle = styled.button`
     transition:2s;
     transition-timing-function: ease;
     font-size:1.3em;
+    position:sticky;
     :hover{
         top: 1150px;
         transition:0.5s;
