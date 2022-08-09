@@ -12,8 +12,8 @@ export const Home = ()=>{
 
     return (
         <C.Basic id="home">
-            <NavBar status={{about,nav}} nav={(status)=> {about;setAbout(status)}} />
-            <Slider/>
+            <NavBar status={{about,home}} nav={[(status)=> {setAbout(status)}, (status)=> {setHome(status)}]} />
+            {home && <Slider/>}
             {about && <About/>}
         </C.Basic>
     )

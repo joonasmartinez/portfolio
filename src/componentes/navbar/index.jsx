@@ -14,8 +14,8 @@ export const NavBar = ({status, nav})=>{
                 </C.menu>
 
                 <C.Smenu>
-                    <C.SubTitle href='#home'>Home</C.SubTitle>
-                    <C.SubTitle onClick={()=>nav(!status.about)}>Sobre mim</C.SubTitle>
+                    <C.SubTitle href='#home' onClick={()=>{nav[1](true)}}>Home</C.SubTitle>
+                    <C.SubTitle onClick={()=>{nav[0](!status.about), nav[1](false)}}>Sobre mim</C.SubTitle>
                     <C.SubTitle>Portfolio</C.SubTitle>
                     <C.SubTitle>Descricao</C.SubTitle>
                     <C.SubTitle>Contato</C.SubTitle>
