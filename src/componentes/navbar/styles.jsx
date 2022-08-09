@@ -39,10 +39,12 @@ export const Titulo = styled.p`
     font-size:2em;
     z-index: 10;
     `
-export const SubTitle = styled.p`
+export const SubTitle = styled.button`
     color:#555555dc;
     /* font-family: 'Dosis', sans-serif; */
     z-index: 9;
+    background-color:transparent;
+    border:none;
     padding:1px;
     cursor: pointer;
     transition:2s;
@@ -67,8 +69,23 @@ export const Button = styled.button`
 `
 
 export const P = styled.p`
+    /* transition:2s; */
     color:black;
     font-size:1.1em;
-    width:60%;
+    width:70%;
+    height:auto;
     text-align:center;
+    animation: aparecer 2s forwards ease;
+    position:relative;
+    z-index:0;
+    @keyframes aparecer {
+        from{
+            opacity:0;
+            left:-150px;
+        }to{
+            opacity:1;
+            left:0px;
+
+        }
+    }
 `
