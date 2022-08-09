@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.nav`
-    width: 100%;
+    width: 100vw;
     height:auto;
     display:flex;
+    flex-direction:column;
     justify-content:space-around;
-    background-color:black;
+    align-items:center;
+    /* background-color:black; */
 `
 
 export const menu = styled.nav`
@@ -13,43 +15,45 @@ export const menu = styled.nav`
     display:flex;
     justify-content:center;
     align-items:center;
-
+    margin: 2%;
 `
 export const Smenu = styled.nav`
-    min-width:70%;
-    background-color:#ffffff49;
-    box-shadow: 0px 0px 15px 1px black;
+    width:70%;
+    background-color:transparent;
+    /* box-shadow: 0px 0px 15px 1px black; */
     /* border-radius:15px; */
+    border-top: 1px solid #8f8f8f;
+    border-bottom: 1px solid #8f8f8f;
     display:flex;
     justify-content:space-around;
     column-gap: 51px;
     align-items:center;
-    color:white;
+    color:black;
     padding: 1%;
 
 `
 
 export const Titulo = styled.p`
-    color:white;
+    color:black;
     font-family: 'Dosis', sans-serif;
     font-size:2em;
     z-index: 10;
     `
 export const SubTitle = styled.p`
-    /* color:#acacacba; */
-    border:1px solid white;
-    font-family: 'Dosis', sans-serif;
+    color:#555555dc;
+    /* font-family: 'Dosis', sans-serif; */
     z-index: 9;
-    /* min-width: 15rem; */
-    padding:10px;
+    padding:1px;
     cursor: pointer;
     transition:2s;
     transition-timing-function: ease;
+    font-size:1.3em;
     :hover{
         top: 1150px;
         transition:0.5s;
-        padding:15px;
-        font-size:1.5em;
+        color:black;
+        /* padding:15px; */
+        font-size:1.8em;
     }
     /* font-family: 'Montserrat', sans-serif; */
 `
@@ -60,4 +64,11 @@ export const Button = styled.button`
     background-color:transparent;
     border:none;
     cursor: pointer;
+`
+
+export const P = styled.p`
+    color:black;
+    font-size:1.1em;
+    width:60%;
+    text-align:center;
 `

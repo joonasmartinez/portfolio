@@ -8,7 +8,7 @@ const Global = createGlobalStyle`
         font-family: 'Montserrat', sans-serif;
     }
     body{
-        background:whitesmoke;
+        background:#fffbf5;
         
     }
     .App{

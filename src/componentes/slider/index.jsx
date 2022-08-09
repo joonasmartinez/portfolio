@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import * as C from './styles';
-import Imagee from '../../../public/imagens/1.png'
 import { FaArrowAltCircleRight } from 'react-icons/fa'
 import { FaArrowAltCircleLeft } from 'react-icons/fa'
 

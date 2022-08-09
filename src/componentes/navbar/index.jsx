@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import * as C from './styles'
 // import Nature from '../../../public/imagens/nature.png'
 
@@ -20,7 +22,7 @@ export const NavBar = ()=>{
                 </C.Smenu>
 
                 <C.menu>
-                    <C.Button>Entrar</C.Button>
+                <C.P><strong>Está é uma bela forma de você demonstrar seu trabalho. Simples e elegante.</strong> </C.P>
                 </C.menu>
         </C.Container>
     )
