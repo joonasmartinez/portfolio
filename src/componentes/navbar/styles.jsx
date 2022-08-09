@@ -7,8 +7,10 @@ export const Container = styled.nav`
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
-    position:static;
-    /* background-color:black; */
+    background-color:#3D3D3D;
+    position:fixed;
+    top:0;
+    z-index:1000;
 `
 
 export const menu = styled.nav`
@@ -22,15 +24,12 @@ export const Smenu = styled.nav`
     width:70%;
     background-color:transparent;
     /* box-shadow: 0px 0px 15px 1px black; */
-    /* border-radius:-10px; */
-    border-top: 1px solid #8f8f8f;
-    border-bottom: 1px solid #8f8f8f;
     display:flex;
     justify-content:space-around;
     column-gap: 51px;
     align-items:center;
     color:black;
-    padding: 1%;
+    padding: 0.5%;
 
 `
 
@@ -41,7 +40,7 @@ export const Titulo = styled.h1`
     z-index: 10;
     `
 export const SubTitle = styled.button`
-    color:#555555dc;
+    color:#acacac;
     /* font-family: 'Dosis', sans-serif; */
     z-index: 9;
     background-color:transparent;
@@ -55,9 +54,9 @@ export const SubTitle = styled.button`
     :hover{
         top: 1150px;
         transition:0.5s;
-        color:black;
+        color:#FDFBFB;
         /* padding:15px; */
-        font-size:1.8em;
+        /* font-size:1.8em; */
     }
     /* font-family: 'Montserrat', sans-serif; */
 `

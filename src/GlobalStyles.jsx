@@ -13,7 +13,10 @@ const Global = createGlobalStyle`
 
     }
     body{
-        background:#fffbf5;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+        
+        /* background: linear-gradient(180deg, rgba(82,82,82,1) 0%, rgba(101,101,101,1) 42%, rgba(43,43,43,1) 100%); */
         ::-webkit-scrollbar-thumb
         {
         /* 3. CSS Styles*/

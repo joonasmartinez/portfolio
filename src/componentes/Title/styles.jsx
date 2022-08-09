@@ -7,6 +7,7 @@ export const Container = styled.nav`
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
+    z-index: 22;
 `
 
 

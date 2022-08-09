@@ -12,6 +12,8 @@ export const About = ()=>{
     }, [avatar])
 
     return (
+        <>
+        {/* <NavBarFixed/> */}
         <C.Basic>
             <C.leftSide>
                 <C.Imagem src={avatar} />
@@ -24,8 +26,9 @@ export const About = ()=>{
             </C.leftSide>
 
             <C.rightSide>
-
+            <C.Titulo>Colocar setas para alterar entre telas dentro deste quadrado.</C.Titulo>
             </C.rightSide>
         </C.Basic>
+        </>
     )
 }

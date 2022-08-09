@@ -12,7 +12,8 @@ export const Home = ()=>{
         <C.Basic id="home">
             <Title/>
             <NavBar/>
-            <Slider/>
+
+            {/* <Slider/> */}
         </C.Basic>
     )
 }
