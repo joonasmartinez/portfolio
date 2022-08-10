@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import * as C from './styles';
+import { FaFileDownload } from 'react-icons/fa'
 
 export const About = ()=>{
 
@@ -13,21 +14,21 @@ export const About = ()=>{
 
     return (
         <>
-        {/* <NavBarFixed/> */}
         <C.Basic>
             <C.leftSide>
-                <h3>{window.innerHeight}</h3>
+              
                 <C.Imagem src={avatar} />
-                <C.Titulo>Jonas Alex Martinez</C.Titulo>
-                <C.desc>Desenvolvedor atualmente focado para Web.<br/>
-                Determinado a conhecer à fundo sobre programação.<br/>
-                Me dedico todo tempo que tenho disponível à aprender!
+                <C.TituloLeft>Jonas Alex Martinez</C.TituloLeft>
+                <C.desc>Desenvolvedor atualmente focado para desenvolvimento Web.<br/>
+                <C.descEnf><strong>Apaixonado pela tecnologia!</strong></C.descEnf>
+                Me dedico todo tempo que tenho disponível à aprender!<br/>
                 Aprendo colocando a mão na massa.</C.desc>
+                <C.download href='https://drive.google.com/file/d/1AZelIgn75ssi2rP-ar6TlqGod3dH1y3s/view?usp=sharing' target={'blank'}><FaFileDownload/>Abrir CV</C.download>
                 
             </C.leftSide>
 
             <C.rightSide>
-            <C.Titulo>Colocar setas para alterar entre telas dentro deste quadrado.</C.Titulo>
+            <C.TituloRight>Conhecimentos Técnicos</C.TituloRight>
             </C.rightSide>
         </C.Basic>
         </>
