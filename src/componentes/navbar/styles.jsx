@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Container = styled.nav`
     width: 100vw;
     height:5vh;
+    box-shadow: 0px 0px 15px 1px black;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
-    background-color:#3d3d3d;
+    background-color:#ffffff;
     position:fixed;
     top:0;
     z-index:1000;
@@ -23,7 +24,6 @@ export const menu = styled.nav`
 export const Smenu = styled.nav`
     width:70%;
     background-color:transparent;
-    /* box-shadow: 0px 0px 15px 1px black; */
     display:flex;
     justify-content:space-around;
     column-gap: 51px;
@@ -40,13 +40,14 @@ export const Titulo = styled.h1`
     z-index: 10;
     `
 export const SubTitle = styled.button`
-    color:#acacac;
+    color:#000000;
     /* font-family: 'Dosis', sans-serif; */
     z-index: 9;
     background-color:transparent;
     border:none;
     padding:1px;
     cursor: pointer;
+    text-transform:uppercase;
     transition:2s;
     transition-timing-function: ease;
     font-size:1.3em;
@@ -54,7 +55,7 @@ export const SubTitle = styled.button`
     :hover{
         top: 1150px;
         transition:0.5s;
-        color:#FDFBFB;
+        color:#444444;
         /* padding:15px; */
         /* font-size:1.8em; */
     }
