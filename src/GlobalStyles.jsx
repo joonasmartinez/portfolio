@@ -20,13 +20,13 @@ const Global = createGlobalStyle`
         ::-webkit-scrollbar-thumb
         {
         /* 3. CSS Styles*/
-        width:22px;
+        width:0px;
         background-color: black;/*Gives background color to the scrollbar*/
         }
         
     }
     body::-webkit-scrollbar {
-width: 5px;/*Gives you width to the scrollbar*/
+width: 0px;/*Gives you width to the scrollbar*/
 }
 body::-webkit-scrollbar-thumb {
 background-color: black;/*Gives background color to the scrollbar*/

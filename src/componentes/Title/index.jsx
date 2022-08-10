@@ -7,7 +7,8 @@ export const Title = ()=>{
         <C.Container>
 
                 <C.menu>
-                    <C.Titulo>Jonas Martinez - Web Developer</C.Titulo>
+                    <C.SubTitulo>Prazer, me chamo Jonas Martinez!</C.SubTitulo>
+                    <C.Titulo>Desenvolvedor Web</C.Titulo>
                 </C.menu>
 
         </C.Container>

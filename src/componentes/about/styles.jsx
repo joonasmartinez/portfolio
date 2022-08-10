@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Basic = styled.section`
     width:100%;
-    height:100vh;
+    height:95vh;
     background-image:url('../../../public/imagens/1.png');
     /* background-color:#5c5c5c; */
     display:flex;

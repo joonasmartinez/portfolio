@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.nav`
     width: 100vw;
-    height:auto;
+    height:5vh;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
-    background-color:#3D3D3D;
+    background-color:#3d3d3d;
     position:fixed;
     top:0;
     z-index:1000;

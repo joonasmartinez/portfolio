@@ -16,6 +16,7 @@ export const About = ()=>{
         {/* <NavBarFixed/> */}
         <C.Basic>
             <C.leftSide>
+                <h3>{window.innerHeight}</h3>
                 <C.Imagem src={avatar} />
                 <C.Titulo>Jonas Alex Martinez</C.Titulo>
                 <C.desc>Desenvolvedor atualmente focado para Web.<br/>

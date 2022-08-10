@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { About } from "../about";
+import { SocialIcons } from "../icons";
 import { NavBar } from "../navbar";
 import { Slider } from "../slider";
 import { Title } from "../Title";
@@ -9,11 +10,10 @@ export const Home = ()=>{
 
 
     return (
-        <C.Basic id="home">
+        <C.Basic>
             <Title/>
-            <NavBar/>
-
-            {/* <Slider/> */}
+            <C.Imagem src='../../public/imagens/background.png'/>
+            <SocialIcons/>
         </C.Basic>
     )
 }
