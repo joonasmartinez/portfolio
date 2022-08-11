@@ -8,13 +8,11 @@ import { Contato } from './componentes/contato';
 
 function App() {
 
-  const [dark, setDark] = useState(true);
 
   return (
     <div className="App">
-    <NavBar Dark={dark}/>
+    <NavBar/>
     <Home />
-      {/* <button onClick={()=>{setDark(!dark)}}>Tema dark</button> */}
     <About />
     <Portfolio />
     <Contato />

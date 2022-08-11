@@ -7,15 +7,14 @@ export const Basic = styled.section`
     max-height:100vh;
     height:100vh;
     font-size:1rem;
-    /* background-color:blueviolet; */
+    /* background-color:#474747; */
     /* padding: 0.5%; */
-    /* background-image:url('../../../public/imagens/1.png'); */
     display:flex;
     justify-content:center;
     flex-direction:column;
     align-items:center;
     flex-wrap:wrap;
-`
+    `
 
 export const Window = styled.div`
     width:100vw;

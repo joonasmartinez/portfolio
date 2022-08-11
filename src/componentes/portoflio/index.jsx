@@ -6,7 +6,7 @@ import * as C from './styles';
 
 export const Portfolio = ()=>{
 
-    const [repos, setRepos] = useState({});
+    const [repos, setRepos] = useState([{}]);
     const Rolar = useRef(null) 
 
     useEffect(()=>{
@@ -18,32 +18,13 @@ export const Portfolio = ()=>{
     return (
         <>
         <C.Window>
-        {console.log(Rolar)}
             <C.RowIcon onClick={()=>{Rolar.current.scrollLeft -= Rolar.current.offsetWidth}}>
                 <BsArrowLeftSquare/>
             </C.RowIcon>
             <C.Basic ref={Rolar}>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
-                <Project/>
+                {console.log(repos)}
+                {repos != {} ? repos.map(repo => <Project Title={repo.name} Desc={repo.description} Updated={repo.updated_at} Repo={repo.svn_url} Home={repo.homepage}/>) : <h3>Problemas em localizar projetos.</h3>}
+        
             </C.Basic>
             <C.RowIcon onClick={()=>{Rolar.current.scrollLeft += Rolar.current.offsetWidth}}>
                 <BsArrowRightSquare/>

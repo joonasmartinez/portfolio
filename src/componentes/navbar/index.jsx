@@ -11,7 +11,7 @@ export const NavBar = ({Dark})=>{
                 <C.Smenu>
                     <C.SubTitle Dark onClick={()=>window.scrollTo(0, 0)}>Home</C.SubTitle>
                     <C.SubTitle Dark onClick={()=>window.scrollTo(0, window.innerHeight)}>Sobre mim</C.SubTitle>
-                    <C.SubTitle Dark onClick={()=>window.scrollTo(0, window.innerHeight*2)}>Portfolio</C.SubTitle>
+                    <C.SubTitle Dark onClick={()=>window.scrollTo(0, window.innerHeight*2)}>PROJETOS</C.SubTitle>
                     {/* <C.SubTitle>Descricao</C.SubTitle> */}
                     <C.SubTitle onClick={()=>window.scrollTo(0, window.innerHeight*3)}>Contato</C.SubTitle>
                 </C.Smenu>
@@ -20,7 +20,7 @@ export const NavBar = ({Dark})=>{
                 <C.Smenu>
                     <C.SubTitle onClick={()=>window.scrollTo(0, 0)}>Home</C.SubTitle>
                     <C.SubTitle onClick={()=>window.scrollTo(0, window.innerHeight)}>Sobre mim</C.SubTitle>
-                    <C.SubTitle onClick={()=>window.scrollTo(0, window.innerHeight*2)}>Portfolio</C.SubTitle>
+                    <C.SubTitle onClick={()=>window.scrollTo(0, window.innerHeight*2)}>PROJETOS</C.SubTitle>
                     {/* <C.SubTitle>Descricao</C.SubTitle> */}
                     <C.SubTitle onClick={()=>window.scrollTo(0, window.innerHeight*3)}>Contato</C.SubTitle>
                 </C.Smenu>
