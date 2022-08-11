@@ -21,7 +21,7 @@ export const About = ()=>{
     }, [avatar])
 
     return (
-        <><h3>{window.innerHeight}</h3>
+        <>
         <C.Basic>
             <C.leftSide>
               

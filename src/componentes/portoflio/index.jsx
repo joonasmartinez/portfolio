@@ -23,7 +23,7 @@ export const Portfolio = ()=>{
             </C.RowIcon>
             <C.Basic ref={Rolar}>
                 {console.log(repos)}
-                {repos != {} ? repos.map(repo => <Project Title={repo.name} Desc={repo.description} Updated={repo.updated_at} Repo={repo.svn_url} Home={repo.homepage}/>) : <h3>Problemas em localizar projetos.</h3>}
+                {repos != {} ? repos.map(repo => <Project Title={repo.name} Desc={repo.description} Updated={repo.updated_at} Repo={repo.html_url} Home={repo.homepage}/>) : <h3>Problemas em localizar projetos.</h3>}
         
             </C.Basic>
             <C.RowIcon onClick={()=>{Rolar.current.scrollLeft += Rolar.current.offsetWidth}}>

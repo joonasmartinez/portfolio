@@ -25,8 +25,18 @@ export const Window = styled.div`
 `
 
 export const RowIcon = styled.button`
+    width:100%;
+    height:25%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     background-color:transparent;
     border:none;
     font-size:2rem;
     cursor: pointer;
+
+    :hover{
+        color:white;
+        background-color:black;
+    }
 `

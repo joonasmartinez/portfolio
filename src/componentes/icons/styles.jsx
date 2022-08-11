@@ -33,19 +33,19 @@ export const icons = styled.a`
     position:relative;
 
     :nth-child(1){
-        animation-delay:1s;
+        animation-delay:0.4s;
     }
     :nth-child(2){
 
-        animation-delay:1.3s;
+        animation-delay:0.6s;
     }
     :nth-child(3){
         
-        animation-delay:1.6s;
+        animation-delay:0.8s;
     }
     :nth-child(4){
 
-        animation-delay:1.9s;
+        animation-delay:1s;
     }
 
     @keyframes entrarIcon {

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Global from "./GlobalStyles";
 import { Home } from './componentes/home';
 import { About } from './componentes/about';
