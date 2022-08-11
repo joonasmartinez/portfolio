@@ -17,7 +17,7 @@ export const About = ()=>{
     const [avatar, setAvatar] = useState('');
 
     useEffect(()=>{
-        const data = fetch('https://api.github.com/users/joonasmartinez', {method:'GET'}).then(res => res.json()).then(res => setAvatar(res.avatar_url));
+        fetch('https://api.github.com/users/joonasmartinez', {method:'GET'}).then(res => res.json()).then(res => setAvatar(res.avatar_url));
     }, [avatar])
 
     return (
@@ -28,7 +28,7 @@ export const About = ()=>{
                 <C.Imagem src={avatar} />
                 <C.TituloLeft>Jonas Alex Martinez</C.TituloLeft>
                 <C.desc>Desenvolvedor atualmente focado para desenvolvimento Web.<br/>
-                <C.descEnf><strong>Apaixonado pela tecnologia!</strong></C.descEnf>
+                <C.desc><strong>Apaixonado pela tecnologia!</strong></C.desc>
                 Dedico todo tempo que tenho disponível à aprender!<br/>
                 Aprendo colocando a mão na massa.</C.desc>
                 <C.download href='https://drive.google.com/file/d/1AZelIgn75ssi2rP-ar6TlqGod3dH1y3s/view?usp=sharing' target={'blank'}><FaFileDownload/>Curriculo</C.download>

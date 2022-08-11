@@ -28,11 +28,11 @@ export const Contato = ()=>{
             </C.Icons>
 
             <C.Icons>
-                Jonas Martinez - Desenvolvedor Web
+                Jonas Martinez
             </C.Icons>
 
             <C.Icons>
-                <C.contato>(React Developer) - 2022</C.contato>
+                <C.contato>(Web Developer) - 2022</C.contato>
             </C.Icons>
 
         </C.Basic>

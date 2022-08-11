@@ -83,6 +83,7 @@ text-align:center;
 `
 
 export const contato = styled.h6`
-    font-size:1rem;
+    font-size:0.8rem;
     text-align:center;
+    color:#000000b5;
 `

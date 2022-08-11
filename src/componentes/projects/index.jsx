@@ -1,7 +1,7 @@
 import React from "react";
 import * as C from './styles';
 
-export const Project = ({Title='-', Desc='-', Updated='-', Repo='', Home=''})=>{
+export const Project = ({Title, Desc, Updated, Repo, Home})=>{
 
     return (
             <C.Basic>
