@@ -9,6 +9,7 @@ export const Container = styled.nav`
     justify-content:space-around;
     align-items:center;
     background-color:#ffffff;
+    /* background-color:#ffffff; */
     position:fixed;
     top:0;
     z-index:1000;

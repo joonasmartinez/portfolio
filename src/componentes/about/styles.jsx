@@ -4,16 +4,27 @@ export const Basic = styled.section`
     width:100vw;
     height:100vh;
     background-image:url('../../../public/imagens/background-aboutme.png');
-    /* background-color:#5c5c5c; */
     display:flex;
     justify-content:start;
     align-items:center;
+    position:relative;
+    animation: open 2s forwards ease;
+    @keyframes open {
+        from{
+            top:-15px;
+            opacity:0;
+        }to{
+            
+            top:0px;
+            opacity:1;
+        }
+    }
 `
 
 export const leftSide = styled.div`
 
     width: 20%;
-    height:90vh;
+    height:95vh;
     background-color:#4141412d;
     border:1px solid #c2c2c2;
     backdrop-filter: blur(2px);
@@ -23,28 +34,44 @@ export const leftSide = styled.div`
     justify-content:start;
     align-items:center;
     row-gap:5%;
-    box-shadow: 0px 0px 10px 2px #000000a2;
+    box-shadow: 0px 15px 10px 5px #000000a2;
     border-radius:5px;
     transition:0.5s;
 
 `
 export const rightSide = styled.div`
 
-    width: 65%;
-    height:90vh;
-    border:1px solid #c2c2c2;
-    background-color:#4141413b;
-    backdrop-filter: blur(20px);
+    width: 67%;
+    height:95vh;
+    /* border:1px solid #c2c2c2; */
+    /* background-color:#4141413b; */
+    /* backdrop-filter: blur(20px); */
     margin-left: 1%;
     display:flex;
     flex-direction:column;
     justify-content:start;
-    align-items:center;
-    row-gap:5%;
-    box-shadow: 0px 0px 10px 2px #000000a2;
-    border-radius:5px;
+    /* align-items:center; */
+    gap:5%;
+    /* box-shadow: 0px 0px 10px 2px #000000a2; */
+    /* border-radius:5px; */
+    overflow-y:none;
     transition:2s;
-
+`
+export const qHabilidades = styled.div`
+    width:auto;
+    height:91%;
+    max-height:91%;
+    ::-webkit-scrollbar {
+    width: 0px;/*Gives you width to the scrollbar*/
+    }
+    /* background-color:blue; */
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    /* flex-direction:column; */
+    gap:1%;
+    padding-bottom:1%;
 `
 
 export const Imagem = styled.img`
@@ -85,12 +112,15 @@ export const TituloLeft = styled.h3`
     font-size:1.5rem;
     color:black;
     padding:5%;
-    background-color:white;
+    background-color:#ffffffd1;
 `
 export const TituloRight = styled.h3`
+    width:100%;
+    height:auto;
+    text-align:center;
     font-size:1.5rem;
     color:black;
-    padding:5%;
+    /* background-color:black; */
 `
 
 export const desc = styled.p`
