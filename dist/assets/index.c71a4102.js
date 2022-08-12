@@ -224,13 +224,13 @@ Error generating stack: `+l.message+`
     font-family: 'Montserrat', sans-serif;
     background-size:cover;
     background-position: center;
-    background-image:url('../../public/imagens/background.png');
+    background-image:url('../imagens/background.png');
 `,rh=()=>oe(nh,{Img:"../../public/imagens/background.png",children:[C(th,{}),C(Zp,{})]}),oh=I.section`
     width:100vw;
     height:100vh;
     background-size:cover;
     background-position: center;
-    background-image:url('../../../public/imagens/background-aboutme.png');
+    background-image:url('../imagens/background-aboutme.png');
     display:flex;
     justify-content:start;
     align-items:center;
