@@ -5,7 +5,7 @@ export const Basic = styled.section`
     height:100vh;
     background-size:cover;
     background-position: center;
-    background-image:url('../public/imagens/background-aboutme.png');
+    background-image:url('../imagens/background-aboutme.png');
     display:flex;
     justify-content:start;
     align-items:center;
