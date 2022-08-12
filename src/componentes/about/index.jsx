@@ -49,9 +49,7 @@ export const About = ()=>{
                     <Habilidade Title={'NPM'} Desc={'NPM'} Nivel={'Basico'} Icon={<FaNpm/>}/>
                     <Habilidade Title={'FireBase'} Desc={'FireBase'} Nivel={'Moderado'} Icon={<IoLogoFirebase/>}/>
        
-
                 </C.qHabilidades>
-
             </C.rightSide>
         </C.Basic>
         </>

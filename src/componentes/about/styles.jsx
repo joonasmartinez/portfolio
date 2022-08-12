@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Basic = styled.section`
     width:100vw;
     height:100vh;
+    background-size:cover;
+    background-position: center;
     background-image:url('../../../public/imagens/background-aboutme.png');
     display:flex;
     justify-content:start;
@@ -18,6 +20,10 @@ export const Basic = styled.section`
             top:0px;
             opacity:1;
         }
+    }
+    @media(max-width:1215px) {
+        height:100vh;
+        flex-direction:column;
     }
 `
 
@@ -38,40 +44,60 @@ export const leftSide = styled.div`
     border-radius:5px;
     transition:0.5s;
 
+    @media(max-width:1215px) {
+        width: auto;
+        row-gap:5%;
+        margin-left:0;
+        padding:5% 0;
+        align-items:center;
+        box-shadow: 0px 0px 10px 1px #000000a2;
+        height:80vh;
+    }
+
 `
 export const rightSide = styled.div`
 
     width: 67%;
     height:95vh;
-    /* border:1px solid #c2c2c2; */
-    /* background-color:#4141413b; */
-    /* backdrop-filter: blur(20px); */
     margin-left: 1%;
     display:flex;
     flex-direction:column;
     justify-content:start;
-    /* align-items:center; */
     gap:5%;
-    /* box-shadow: 0px 0px 10px 2px #000000a2; */
-    /* border-radius:5px; */
-    overflow-y:none;
+    /* overflow-y:visible; */
     transition:2s;
+    @media(max-width:1215px) {
+        width: 100vw;
+        /* overflow:scroll; */
+        height:20vh;
+        margin-top:10%;
+    }
+    
 `
 export const qHabilidades = styled.div`
     width:auto;
     height:91%;
     max-height:91%;
     ::-webkit-scrollbar {
-    width: 0px;/*Gives you width to the scrollbar*/
+        width: 0px;
     }
-    /* background-color:blue; */
     display:flex;
     flex-wrap:wrap;
     align-items:center;
     justify-content:center;
     /* flex-direction:column; */
     gap:1%;
-    padding-bottom:1%;
+    /* padding-bottom:1%; */
+    @media(max-width:1215px) {
+        width:auto;
+        height:100vh;
+        max-height:auto;
+        flex-direction:column;
+        /* overflow-y:visible; */
+        overflow-x:scroll;
+        gap:5%;
+        flex-wrap:wrap;
+    }
 `
 
 export const Imagem = styled.img`
@@ -79,7 +105,6 @@ export const Imagem = styled.img`
     position:relative;
     width: 90%;
     height:auto;
-    /* border:5px solid black; */
     box-shadow:0px 0px 5px 0.1px black;
     border-radius:50%;
     margin-top:30%;
@@ -104,19 +129,30 @@ export const Imagem = styled.img`
         }
     }
 
+    @media(max-width:1215px) {
+        width: 70%;
+        margin-top:5%;
+        margin-bottom:3%;
+    }
+
 `
 
 export const TituloLeft = styled.h3`
     width:100%;
     text-align:center;
     font-size:1.5rem;
+    overflow:hidden;
     color:black;
     padding:5%;
     background-color:#ffffffd1;
+    @media(max-width:1215px){
+        padding:1%;
+    }
 `
 export const TituloRight = styled.h3`
     width:100%;
     height:auto;
+    overflow:visible;
     text-align:center;
     font-size:1.5rem;
     color:black;
@@ -124,23 +160,26 @@ export const TituloRight = styled.h3`
 `
 
 export const desc = styled.p`
-    width:80%;
     font-size:1.2rem;
     color:black;
     text-align:center;
     width:100%;
+    margin:5px;
+    overflow:visible;
+    
 `
 export const descEnf = styled.p`
     color:black;
 `
 export const download = styled.a`
     width: 30%;
+    height:auto;
+    overflow:visible;
     display:flex;
     cursor: pointer;
     border-radius:5px;
     box-shadow:0px 0px 5px 1px #00000076;
     /* flex-direction:column; */
-    height:auto;
     background-color: #299eff;
     align-items:center;
     justify-content:space-around;
@@ -152,5 +191,24 @@ export const download = styled.a`
     :active{
         background-color: #006bc2;
         box-shadow:0px 0px 10px 1px #000000cf;
+    }
+
+    @media(max-width:1215px){
+    }
+`
+
+export const Arrastar = styled.div`
+    opacity:0;
+    @media(max-width:1215px){
+        font-size:1.5rem;
+        opacity:1;
+        width:auto;
+        /* top:0; */
+        /* height:10%; */
+        color:red;
+        position:relative;
+        text-align:right;
+        /* bottom:3%; */
+        /* background-color:black; */
     }
 `

@@ -18,12 +18,12 @@ const Global = createGlobalStyle`
         
     }
     body::-webkit-scrollbar {
-width: 0px;/*Gives you width to the scrollbar*/
-}
-body::-webkit-scrollbar-thumb {
-background-color: black;/*Gives background color to the scrollbar*/
-outline: 1px solid grey;
-}
+    width: 0px;/*Gives you width to the scrollbar*/
+    }
+    body::-webkit-scrollbar-thumb {
+    background-color: black;/*Gives background color to the scrollbar*/
+    outline: 1px solid grey;
+    }
     
     .App{
         display:flex;

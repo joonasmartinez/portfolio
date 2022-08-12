@@ -7,9 +7,8 @@ export const Home = ()=>{
 
 
     return (
-        <C.Basic>
+        <C.Basic Img={'../../public/imagens/background.png'}>
             <Title/>
-            <C.Imagem src='../../public/imagens/background.png'/>
             <SocialIcons/>
         </C.Basic>
     )

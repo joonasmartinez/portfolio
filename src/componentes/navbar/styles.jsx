@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.nav`
     width: 100vw;
-    height:5vh;
+    min-height:5vh;
+    height:auto;
     box-shadow: 0px 0px 15px 1px black;
     display:flex;
     flex-direction:column;
@@ -27,10 +28,14 @@ export const Smenu = styled.nav`
     background-color:transparent;
     display:flex;
     justify-content:space-around;
-    column-gap: 51px;
+    column-gap: 1%;
     align-items:center;
     color:black;
     padding: 0.5%;
+
+    @media(max-width:500px) {
+        width:100%;
+    }
 
 `
 
@@ -61,6 +66,10 @@ export const SubTitle = styled.button`
         /* font-size:1.8em; */
     }
     /* font-family: 'Montserrat', sans-serif; */
+    @media(max-width:500px) {
+        font-size:1rem;
+    }
+
 `
 
 export const Button = styled.button`

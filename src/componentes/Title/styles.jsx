@@ -26,6 +26,13 @@ export const Titulo = styled.h1`
     font-size:5em;
     z-index: 10;
     margin:0;
+    text-align:start;
+    word-wrap:break-word;
+    transition:1s;
+    @media(max-width:500px) {
+        font-size:3em;
+    }
+
     `
 export const SubTitulo = styled.p`
     color:black;
@@ -33,4 +40,8 @@ export const SubTitulo = styled.p`
     font-size:2em;
     z-index: 10;
     margin:0;
+    
+    @media(max-width:500px) {
+        font-size:1em;
+    }
     `
