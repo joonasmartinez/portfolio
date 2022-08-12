@@ -16,6 +16,11 @@ export const Basic = styled.div`
     align-items:center;
     margin:1% 10%;
     border-radius:15px;
+
+    @media(max-width:1215px){
+        margin:2% 2%;
+        min-width:90%;
+        }
 `
 
 export const Title = styled.p`

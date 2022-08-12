@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Basic = styled.section`
     min-width:90%;
     width:auto;
-    /* overflow-x:scroll; */
+    overflow-x:scroll;
     max-height:100vh;
     height:100vh;
     font-size:1rem;
@@ -14,6 +14,15 @@ export const Basic = styled.section`
     flex-direction:column;
     align-items:center;
     flex-wrap:wrap;
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    @media(max-width:1215px){
+        min-width:100%;
+        }
+
     `
 
 export const Window = styled.div`
