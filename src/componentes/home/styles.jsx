@@ -14,5 +14,5 @@ export const Basic = styled.section`
     font-family: 'Montserrat', sans-serif;
     background-size:cover;
     background-position: center;
-    background-image:url('../../public/imagens/background.png');
+    background-image:url('../imagens/background.png');
 `
