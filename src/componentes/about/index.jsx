@@ -31,7 +31,7 @@ export const About = ()=>{
                 <C.desc><strong>Apaixonado pela tecnologia!</strong></C.desc>
                 Dedico todo tempo que tenho disponível à aprender!<br/>
                 Aprendo colocando a mão na massa.</C.desc>
-                <C.download href='https://drive.google.com/file/d/1AZelIgn75ssi2rP-ar6TlqGod3dH1y3s/view?usp=sharing' target={'blank'}><FaFileDownload/>Curriculo</C.download>
+                <C.download href='https://drive.google.com/file/d/1xRqq8i5bA3Mfydn8R6N0wB03UU6sY7FU/view' target={'blank'}><FaFileDownload/>Curriculo</C.download>
                 
             </C.leftSide>
 
